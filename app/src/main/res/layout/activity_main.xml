@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="-50dp"
+        android:text="To Do App"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        app:lottie_rawRes="@raw/todo"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/animationView"
+        app:layout_constraintVertical_bias="0.4"
+        android:layout_height="250dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToDoList"
+        android:textAllCaps="false"
+        android:translationY="50dp"
+        android:id="@+id/btn_to_do_list"
+        android:textSize="25sp"
+        android:backgroundTint="#03A9F4"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Do"
+        android:textSize="25sp"
+        android:translationY="50dp"
+        android:id="@+id/btn_add_to_do"
+        android:textAllCaps="false"
+        android:backgroundTint="#03A9F4"/>
+
+</LinearLayout>
